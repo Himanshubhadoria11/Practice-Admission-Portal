@@ -18,6 +18,10 @@ const ContactSchema = new mongoose.Schema({
         type: String,
         Required: true,
     },
+    comment:{
+        type:String,
+        default:"Pending"
+    },
    
     user_id:{
         type: String,
