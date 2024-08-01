@@ -1,0 +1,116 @@
+/* ---------------------------------------------------------------
+                            General
+------------------------------------------------------------------ */
+
+body{
+    /* background: #f7f0bd !important; */
+    /* background: silver !important; */
+    background-image: url(../Images/pexels-karolina-grabowska-8106676.jpg);
+     width: 100%;
+     height: 950px;
+     background-position: center;
+     background-size: cover;
+}
+::placeholder{
+    color: gray !important;
+    font-weight: lighter;
+
+}
+.a{
+    background: silver !important;  
+   
+}
+
+/* label{
+    padding-top: 10% !important;
+} */
+
+button{
+    background: #2a1a6f !important;
+    
+}
+
+/* ---------------------------------------------------------------
+                            #navbar
+------------------------------------------------------------------ */
+
+#navbar nav{
+    background: #0000009c !important;
+}
+
+.webViewPosition{
+    text-align: start !important;
+}
+
+/* ---------------------------------------------------------------
+                            #carousel
+------------------------------------------------------------------ */
+
+.carouselHeight{
+    height: 100vh;
+}
+
+/* ---------------------------------------------------------------
+                            #login
+------------------------------------------------------------------ */
+
+/* .bglogin{
+   background: #f7f0bd !important;
+   background: silver !important;
+   
+
+  
+   
+} */
+
+/* ---------------------------------------------------------------
+                            #footer
+------------------------------------------------------------------ */
+
+#footer
+{
+    background: #2a1a6f;
+}
+
+#social{
+    /* background: white; */
+    background: red !important;
+}
+
+#detail p{
+    text-align: justify;
+}
+
+/* ---------------------------------------------------------------
+                            About
+------------------------------------------------------------------ */
+
+.page-title-area {
+    position: relative;
+    z-index: 1;
+}
+
+.paddingValue label
+{
+    padding: 0 !important;
+}
+
+/* ---------------------------------------------------------------
+                            Media Query
+------------------------------------------------------------------ */
+
+@media (max-width:992px) {
+    #navbarsExample11{
+        justify-content: center !important;
+    }
+
+    .mobileViewButton{
+        /* background: white !important; */
+        /* background-image: url(../Images/pexels-karolina-grabowska-8106676.jpg); */
+       
+        margin-bottom: 2rem;
+    }
+}
+
+
+

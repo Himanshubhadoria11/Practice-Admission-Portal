@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <style>
+            .a{
+                background: silver !important;
+                
+
+            }
+           </style>
+</head>
+
+<body>
+
+    <!-- Register Here -->
+    <div  class="container-fluid a">
+        <div class="row">
+    <section id="login" class="my-5 a">
+        <!-- <div  class="container-fluid a">
+            <div class="row"> -->
+                <!-- Column-1 -->
+                <!-- <div class="col-lg-6">
+                    <img class="w-100" src="./Images/university-registration-poster-template-edit-online.webp" alt="College Students Image-2"
+                        height="70%"> -->
+                        <!-- ./Images/CollegeStudentsImage-2.jpeg  -->
+                          <!-- College Students Image-2 -->
+                <!-- </div> -->
+                <!-- End Column-1 -->
+
+                <!-- Column-2 -->
+                <div  class="col-lg-12 bglogin p-4  ">
+                    <form action="/userInsert" method="post" enctype="multipart/form-data">
+                        <!-- logo -->
+                        <center>
+                            <img class="mb-4 rounded-circle" src="./Images/register icon.jpg" alt="Sign Up Image"
+                                width="20%" height="20%">
+                        </center>
+
+                        <!-- Heading (Register Here) -->
+                        <h1 class="mb-5 text-center text-info">Register Here</h1>
+                        <% if(msg.length> 0){ %>
+                            <div class="alert alert-danger">
+                                <!-- To Print -->
+                                <%= msg %>
+                            </div>
+                            <% } %>
+                            <% if(msg1.length> 0){ %>
+                                <div class="alert alert-success">
+                                    <!-- To Print -->
+                                    <%= msg1 %>
+                                </div>
+                                <% } %>
+
+                        <!-- User Name -->
+                        
+                        <div class="row mb-4">
+                            <div class="col-lg-3"></div>
+                            <div class="col-lg-2 text-center bg-primary rounded text-light fw-bold my-auto p-2">User
+                                Name</div>
+                            <div class="col-lg-4">
+                                <input name="n" class="form-control text-capitalize" type="text" placeholder="Enter your name"
+                                    required>
+                            </div>
+                            <div  class="col-lg-3"></div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="row mb-3">
+                            <div class="col-lg-3"></div>
+                            <div class="col-lg-2 text-center bg-primary rounded text-light fw-bold my-auto p-2">Email
+                            </div>
+                            <div class="col-lg-4">
+                                <input name="e" class="form-control" type="email" placeholder="name@example.com" required>
+                            </div>
+                            <div class="col-lg-3"></div>
+                        </div>
+
+                        <!-- Password -->
+                        <div class="row mb-4">
+                            <div class="col-lg-3"></div>
+                            <div class="col-lg-2 text-center bg-primary rounded text-light fw-bold my-auto p-2">
+                                Password</div>
+                            <div class="col-lg-4">
+                                <input name="p" class="form-control" type="password" required>
+                            </div>
+                            <div class="col-lg-3"></div>
+                        </div>
+
+                        <!-- Confirm Password -->
+                        <div class="row mb-4">
+                            <div class="col-lg-3"></div>
+                            <div class="col-lg-2 text-center bg-primary rounded text-light fw-bold my-auto p-2">
+                                Confirm Password</div>
+                            <div class="col-lg-4">
+                                <input name="cp" class="form-control" type="password" required>
+                            </div>
+                            <div class="col-lg-3"></div>
+                        </div>
+
+                        <!-- Choose File -->
+                        <div class="row mb-4">
+                            <div class="col-lg-3"></div>
+                            <div class="col-lg-2 text-center bg-primary rounded text-light fw-bold my-auto p-2">
+                                Image</div>
+                            <div class="col-lg-4">
+                                <input name="image" class="form-control" type="file" required>
+                            </div>
+                            <div class="col-lg-3"></div>
+                        </div>
+                      
+
+                        <!-- Button (Login) -->
+                        <center>
+                            <button type="submit" class="btn btn-warning mb-5 btn-lg fw-bold">Register</button>
+                           
+                                <p  class="fw-light  fw-bold text-warning fs-5">If already Regsitered? &nbsp;<a class="bg-danger   fw-bold text-info"
+                                        href="/">Login Now</a></p>
+                                        
+                        </center>
+
+                    </form>
+                </div>
+                <!-- End Column-2 -->
+              
+           <!-- </div>
+        </div> -->
+    </section>
+</div>
+</div>
+    <!-- End Register Here -->
+
+    <!-- Java Script Link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<%- include("../header.ejs") %>
+<br><br><br>
+<h1 class="bg-info text-center mt-5">Contact Display</h1>
+<div class="container">
+    <table class="table table-bordered text-center">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+         
+            <th>Address</th>
+        </tr>
+        <% c.forEach((item)=>{ %>
+
+       
+            <tr>
+                <td><%= item.id %></td>
+                <td><%= item.name %></td>
+                <td><%= item.email %></td>
+                <td><%= item.address %></td>
+
+            </tr>
+
+                <% }) %>
+
+       
+
+       
+      
+          
+            
+
+
+    </table>
+ <center>
+    <a href="/home" class=" btn btn-info">Back</a>
+
+</center>
+
+</div>
+
+<%- include("../footer.ejs") %>
+
