@@ -63,6 +63,7 @@ class FrontController {
             console.log(error)
         }
     }
+   
     static verifyLogin = async (req, res) => {
         try {
             // console.log(req.body)
@@ -82,7 +83,7 @@ class FrontController {
                         const token = jwt.sign({ ID: user._id }, 'pninfosys123dhdjh');
                         // console.log(token)
                         res.cookie('token', token)
-                        res.redirect('/admin/display')
+                        res.redirect('/home')
 
                     }
                     else if (user.role == "student" &&user.is_verified==1) {
