@@ -58,18 +58,19 @@ class AdminController{
     static contactInsert = async (req, res) => {
         try {
             //console.log(req.body)
-            const { name, email, address }
+            const { name, email, address,comment }
                 = req.body
             const result = new ContactModel({
                 name: name,
                 email: email,
                 
                 address: address,
+                comment:comment,
                 
                 user_id: req.Udata.id
             })
             await result.save()
-            this.sendEmail(name,email,address)
+            this.sendEmail(name,email,address,comment)
             res.redirect('/contact')
         } catch (error) {
             console.log(error)
@@ -80,10 +81,10 @@ class AdminController{
 
     static contactDisplay = async (req, res) => {
         try {
-            const { name, email, address, id,role ,image} = req.Udata
+            const { name, email, address,comment, id,role ,image} = req.Udata
             const contact = await ContactModel.find({ user_id: id })
             console.log(contact)
-            res.render('admin/contactdisplay', { n: name, e:email, a:address,i:id,role:role,i:image,c:contact})
+            res.render('admin/contactdisplay', { n: name, e:email, a:address,i:id,role:role,i:image,c:contact,co:comment})
         } catch (error) {
             console.log(error)
         }
