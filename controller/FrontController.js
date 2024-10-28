@@ -297,9 +297,12 @@ class FrontController {
             text: "heelo", // plain text body
             html:
               "<p>Hii " +
-              name +
-              ',Please click here to <a href="http://localhost:4000/verify?id=' +
-              user_id +
+            //   name +
+            //   ',Please click here to <a href="http://localhost:4000/verify?id=' +
+            //   user_id +
+            name +
+            ',Please click here to <a href="https://practice-admission-portal.onrender.com/verify?id=' +
+            user_id +
               '">Verify</a>Your mail</p>.',
           });
           //console.log(info);
@@ -396,25 +399,7 @@ class FrontController {
           };
 
          
-        static ContactInsert = async (req, res) => {
-            try {
-                //console.log(req.body)
-                const { n,e,msg}= req.body
-                const result = new ContactModel({
-                    Name: n,
-                    Email: e,
-                    Message:msg,
-                   
-                    user_id: req.Udata.id
-                })
-                await result.save()
-               
-                res.redirect('/contact')
-            } catch (error) {
-                console.log(error)
-            }
-    
-        }
+       
        
        
         

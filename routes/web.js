@@ -18,8 +18,6 @@ route.post('/changePassword',checkUserAuth, FrontController.changePassword)
 route.post('/updateProfile',checkUserAuth, FrontController.updateProfile)
 
 //course
-route.post('/contactInsert',checkUserAuth, FrontController.ContactInsert)
-
 route.post('/course_insert',checkUserAuth, CourseController.courseInsert)
 route.get('/courseDisplay',checkUserAuth, CourseController.courseDisplay)
 route.get('/courseView/:id',checkUserAuth, CourseController.courseView)
